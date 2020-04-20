@@ -1,14 +1,23 @@
 {
     "scripts": {
-        "build": "webpack",
-        "serve": "webpack-dev-server"
+        "build": "webpack --config webpack.dev.js",
+        "serve": "webpack-dev-server --config webpack.dev.js",
+        "start": "node server.js",
+        "heroku-postbuild": "webpack -p --config webpack.prod.js"
+    },
+    "engines": {
+        "node": "13.13.x"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
     },
     "devDependencies": {
         "@wasm-tool/wasm-pack-plugin": "^1.2.0",
-        "text-encoding": "^0.7.0",
         "html-webpack-plugin": "^4.2.0",
+        "text-encoding": "^0.7.0",
         "webpack": "^4.42.1",
         "webpack-cli": "^3.3.11",
-        "webpack-dev-server": "^3.10.3"
+        "webpack-dev-server": "^3.10.3",
+        "webpack-merge": "^4.2.2"
     }
 }

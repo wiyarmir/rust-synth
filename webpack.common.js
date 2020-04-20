@@ -24,4 +24,5 @@ module.exports = {
     }),
   ],
   mode: 'development',
+  stats: true,
 };
