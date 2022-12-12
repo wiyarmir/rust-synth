@@ -9,7 +9,7 @@
         "node": "13.13.x"
     },
     "dependencies": {
-        "express": "^4.17.1"
+        "express": "^4.17.3"
     },
     "devDependencies": {
         "@wasm-tool/wasm-pack-plugin": "^1.2.0",
